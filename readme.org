@@ -1,0 +1,8 @@
+* Links
+
+** channels
+https://ndportmann.com/system-threading-channels/
+
+** pipelines
+https://devblogs.microsoft.com/dotnet/system-io-pipelines-high-performance-io-in-net/
+https://habr.com/en/post/466137/
