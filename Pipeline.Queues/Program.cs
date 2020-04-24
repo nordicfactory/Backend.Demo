@@ -8,11 +8,18 @@ using System.Threading.Tasks;
 
 namespace Pipeline.Queues
 {
+    struct Test
+    {
+        public int T;
+    }
     class Program
     {
 
         static async Task Main(string[] args)
         {
+            var t = new Test();
+            t.T = 9;
+
             await Demo2.Run();
         }
     }

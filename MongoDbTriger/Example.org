@@ -1,0 +1,26 @@
+﻿#+begin_src C++ 
+[assembly: FunctionsStartup(typeof(Demo.Startup))]
+namespace Demo
+{
+    public class Startup : IWebJobsStartup
+    {
+        public void Configure(IWebJobsBuilder builder)
+        {
+            builder.AddMongoDbTrigger();
+        }
+    }
+
+
+    public static class Function1
+    {
+        [FunctionName("Function1")]
+        public static void Run([MongoDbTrigger(
+                "Demo",
+                ConnectionStringSetting = "%Connection"
+            )]
+            ChangeStreamDocument<DemoObject> csd)
+        {
+        }
+    }
+}
+#+end_src
