@@ -1,4 +1,4 @@
-﻿#+begin_src C++ 
+#+begin_src C++ 
 [assembly: FunctionsStartup(typeof(Demo.Startup))]
 namespace Demo
 {
